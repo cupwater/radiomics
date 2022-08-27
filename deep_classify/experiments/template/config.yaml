@@ -1,0 +1,21 @@
+common:
+    arch: MLNet
+    workers: 1
+    train_batch: 32
+    test_batch: 16
+    shuffle_strategy: 1
+    lr: 0.001
+    gamma: 0.1
+    epoch: 100
+    scheduler: [15, 25]
+    momentum: 0.9
+    weight_decay: 0.001
+    nesterov: True
+    print_interval: 1000
+
+dataset : 
+    type: RadiomicsDataset
+    train_list: '../radiomics_data/data1/RA-C_train.feat'
+    train_meta: '../radiomics_data/data1/RA-C_train.meta'
+    test_list:  '../radiomics_data/data1/RA-C_test.feat'
+    test_meta:  '../radiomics_data/data1/RA-C_test.meta'
