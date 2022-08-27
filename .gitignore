@@ -1,3 +1,11 @@
 *.csv
 *.docx
 .idea
+.*
+__pycache__/
+*.pyc
+radiomics_data/
+*.pt
+*.gz
+*.tar
+*.zip
